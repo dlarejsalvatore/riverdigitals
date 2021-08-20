@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="43px" viewBox="0 0 46 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icons / line-chart</title>
+    <g id="icons-/-line-chart" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M0,43 L0,1 L2,1 L2,41 L43,41 L43,43 L0,43 Z" id="Combined-Shape" fill="#003058"></path>
+        <circle id="Oval" stroke="#B03478" stroke-width="1.5" cx="15" cy="13" r="2.25"></circle>
+        <circle id="Oval-Copy" stroke="#B03478" stroke-width="1.5" cx="29" cy="18" r="2.25"></circle>
+        <circle id="Oval-Copy-2" stroke="#B03478" stroke-width="1.5" cx="40" cy="4" r="2.25"></circle>
+        <circle id="Oval-Copy-3" stroke="#B03478" stroke-width="1.5" cx="40" cy="23" r="2.25"></circle>
+        <circle id="Oval-Copy-4" stroke="#B03478" stroke-width="1.5" cx="27" cy="29" r="2.25"></circle>
+        <circle id="Oval-Copy-5" stroke="#B03478" stroke-width="1.5" cx="14" cy="29" r="2.25"></circle>
+        <line x1="38.5" y1="6.5" x2="29.5" y2="15.5" id="Line" stroke="#002F57" stroke-width="1.5" stroke-linecap="square"></line>
+        <line x1="26.5" y1="18.5" x2="18.5" y2="13.5" id="Line-2" stroke="#002F57" stroke-width="1.5" stroke-linecap="square"></line>
+        <line x1="12.5" y1="13.5" x2="2.5" y2="21.5" id="Line-3" stroke="#002F57" stroke-width="1.5" stroke-linecap="square"></line>
+        <line x1="1.5" y1="37.5" x2="10.5" y2="30.5" id="Line-4" stroke="#002F57" stroke-width="1.5" stroke-linecap="square"></line>
+        <line x1="16.5" y1="29.5" x2="24.5" y2="29.5" id="Line-5" stroke="#002F57" stroke-width="1.5" stroke-linecap="square"></line>
+        <line x1="29.5" y1="28.5" x2="37.5" y2="23.5" id="Line-6" stroke="#002F57" stroke-width="1.5" stroke-linecap="square"></line>
+    </g>
+</svg>

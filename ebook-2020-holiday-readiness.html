@@ -1,0 +1,42 @@
+<html>
+    <script id='b64-replace' type="text/javascript">
+        (function () {
+            var query = [];
+            var searchArray = document.location.search.replace('?', '').split('&');
+            var url = document.location.origin + document.location.pathname + '?b64=';
+            var i;
+
+            for (i = 0; i < searchArray.length; i++) {
+                if (searchArray[i].indexOf("PANTHEON_STRIPPED") === -1) {
+                    query.push(searchArray[i]);
+                }
+            }
+
+            query.push(
+              'landingPageAjaxLoaderRequest=true'
+            );
+
+            if (window.XMLHttpRequest) {
+                var xhReq = new XMLHttpRequest();
+            } else {
+                var xhReq = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+
+            xhReq.open('events/get-fulfillment-infrastructure-can-count/index.html', url + window.btoa(query.join('&')), false);
+            xhReq.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+            xhReq.send();
+
+            document.open();
+            document.write(xhReq.responseText);
+            document.close();
+            document.getElementById("b64-replace").remove();
+        })();
+    </script>
+    
+<!-- Mirrored from www.riverdigitals.com/ebook-2020-holiday-readiness by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 04 Jun 2021 07:23:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<body>
+    </body>
+
+<!-- Mirrored from www.riverdigitals.com/ebook-2020-holiday-readiness by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 04 Jun 2021 07:23:17 GMT -->
+</html>

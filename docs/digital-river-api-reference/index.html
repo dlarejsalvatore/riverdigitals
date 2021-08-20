@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from www.riverdigitals.com/docs/digital-river-api-reference/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 04 Jun 2021 06:20:58 GMT -->
+<head>
+    <title>River Digitals API Reference</title>
+    <meta
+      name="description"
+      content="River Digitals Interactive Demo. OpenAPI/Swagger-generated API Reference Documentation"
+    />
+    <!-- needed for adaptive design -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:300,400,700"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/redoc@next/bundles/redoc.standalone.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+	  const PATH = "";
+      const VERSIONS = ["2021-03-23", "2021-02-23", "2020-12-17", "2020-09-30", "2020-01-07"];
+      let dropdown = function (opt) {
+        let html = '<select name="versions" id="versions">';
+        VERSIONS.forEach(v => {
+          html += `<option value="${v}.json"`;
+          html += opt && opt.startsWith(v) ? 'selected' : '';
+          html += `>${v}</option>`;
+        });
+        return html += '</select>';
+      };
+	  
+	  let redoc = function (url, opt) {
+	    Redoc.init(
+          url,
+          {
+            theme: {
+              colors: {
+                primary: {
+                  main: "#002F57",
+                },
+              },
+              logo: {
+                maxHeight: "auto",
+                maxWidth: "170px",
+                gutter: "25px",
+              },
+              typography: {
+                headings: {
+                  fontFamily: "Roboto, sans-serif",
+                  lineHeight: "auto",
+                },
+              },
+              code: {
+                fontFamily: "Roboto, sans-serif",
+              },
+            },
+          },
+          document.getElementById("redoc-container"),
+		  function () {
+			$('h1:first').html(function() {
+				return $(this).html() + dropdown(opt);
+			});
+			$('#versions').change(function () {
+				redoc(PATH + $(this).val(), $(this).val());
+			});
+		  }
+        );
+      };
+	  
+      $(document).ready(function () {
+        redoc(`${PATH}${VERSIONS[0]}.json`, VERSIONS[0]);
+      });
+    </script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <!-- favicons -->
+    <link
+      rel="icon"
+      href="../../wp-content/themes/digital-river-2019/assets/images/dr-favicon.ico"
+    />
+  </head>
+  <body>
+    <div id="redoc-container"></div>
+  </body>
+
+<!-- Mirrored from www.riverdigitals.com/docs/digital-river-api-reference/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 04 Jun 2021 06:20:58 GMT -->
+</html>
